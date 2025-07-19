@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "address_format": {
+      "levels": [
+        {"name": "province", "type": "province", "level": 1, "required": true},
+        {"name": "district", "type": "district", "level": 2, "required": true},
+        {"name": "ward", "type": "ward", "level": 3, "required": false}
+      ],
+      "display_format": "{street_address}, {ward}, {district}, {province}",
+      "search_fields": ["street_address", "ward", "district", "province"]
+    }
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "address_format": {
+      "levels": [
+        {"name": "state", "type": "state", "level": 1, "required": true},
+        {"name": "county", "type": "county", "level": 2, "required": false},
+        {"name": "city", "type": "city", "level": 3, "required": true}
+      ],
+      "display_format": "{street_address}, {city}, {state}",
+      "search_fields": ["street_address", "city", "county", "state"]
+    }
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "address_format": {
+      "levels": [
+        {"name": "country", "type": "country", "level": 1, "required": true},
+        {"name": "county", "type": "county", "level": 2, "required": false},
+        {"name": "city", "type": "city", "level": 3, "required": true}
+      ],
+      "display_format": "{street_address}, {city}, {county}, {country}",
+      "search_fields": ["street_address", "city", "county", "country"]
+    }
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "address_format": {
+      "levels": [
+        {"name": "prefecture", "type": "prefecture", "level": 1, "required": true},
+        {"name": "city", "type": "city", "level": 2, "required": true},
+        {"name": "district", "type": "district", "level": 3, "required": false}
+      ],
+      "display_format": "{prefecture}, {city}, {district}, {street_address}",
+      "search_fields": ["street_address", "district", "city", "prefecture"]
+    }
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "address_format": {
+      "levels": [
+        {"name": "district", "type": "district", "level": 1, "required": false}
+      ],
+      "display_format": "{street_address}, Singapore {district}",
+      "search_fields": ["street_address", "district"]
+    }
+  }
+]
